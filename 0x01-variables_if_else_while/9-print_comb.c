@@ -1,21 +1,28 @@
-#include <stdio.h>
+#include<stdio.h>
+
 /**
- * main - main Function
+ * main - Entry point
  *
- * Return: 0
- */
+ * Description: print 0, 1, - 9
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	char c;
-	int i;
+	int digit = 0;
 
-	for (i = 0; i < 10; i++)
+	while (digit <= 9)
 	{
-		putchar(i + '0');
-	}
-	for (c = 'a'; c < 'g'; c++)
-	{
-		putchar(c);
+		putchar(digit + 48);
+
+		if (digit != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+
+		++digit;
 	}
 	putchar('\n');
 
