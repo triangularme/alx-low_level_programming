@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - entry point
+ * main - entry point
  *
  * Desription: print digits from 0 - 9
  *
